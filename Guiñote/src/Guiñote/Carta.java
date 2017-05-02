@@ -17,8 +17,8 @@ public class Carta extends Rectangle{
 	public static final int CORAZONES = 2;
 	public static final int PICAS = 3;
 	
-	public static final int ANCHURA = 150;
-	public static final int ALTURA = 150;
+	public static final int ANCHURA = 70;
+	public static final int ALTURA = 120;
 	
 	private Image imagen;
 	private int valor;
@@ -26,7 +26,7 @@ public class Carta extends Rectangle{
 	private int palo;
 	
     public Carta(Image img, int v, int c, int p) {
-    	super(250, 250, ANCHURA, ALTURA);
+    	super(-200, -200, ANCHURA, ALTURA);
     	imagen = img;
 		valor = v;
 		color = c;
@@ -35,6 +35,14 @@ public class Carta extends Rectangle{
 
     public void dibujar(Graphics g, Applet a){
 		g.drawImage(imagen, x, y, width, height, a);
+    }
+    
+    public void setPosx(int s){
+    	x = s;
+    }
+    
+    public void setPosy(int s){
+    	y = s;
     }
 
 	public Image getImagen() {
