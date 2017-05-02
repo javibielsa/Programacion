@@ -11,12 +11,15 @@ public class Carta extends Rectangle{
 	
 	public static final int ROJO = 1;
 	public static final int NEGRO = 2;
-	public static final int PICAS = 1;
+	
+	public static final int TREBOLES = 0;
+	public static final int DIAMANTES = 1;
 	public static final int CORAZONES = 2;
-	public static final int TREBOLES = 3;
-	public static final int DIAMANTES = 4;
+	public static final int PICAS = 3;
+	
 	public static final int ANCHURA = 150;
 	public static final int ALTURA = 150;
+	
 	private Image imagen;
 	private int valor;
 	private int color;
