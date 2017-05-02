@@ -35,7 +35,7 @@ public class Solitario extends Applet{
 		
 	}
 	
-	public boolean onClick(Event e, int x, int y){
+	public boolean mouseDown(Event e, int x, int y){
 		if(reverso.contains(x,y)){
 			
 		}
