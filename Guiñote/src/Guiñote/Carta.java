@@ -26,7 +26,7 @@ public class Carta extends Rectangle{
 	private int palo;
 	
     public Carta(Image img, int v, int c, int p) {
-    	super(-200, -200, ANCHURA, ALTURA);
+    	super(250, 250, ANCHURA, ALTURA);
     	imagen = img;
 		valor = v;
 		color = c;

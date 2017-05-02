@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class Baraja {
 	java.util.List<Carta> mazoPrincipal;
-	int cartaActual = 0;
 	
 	public Baraja(Image imagenes[]){
 		mazoPrincipal = new java.util.ArrayList<Carta>();
@@ -11,6 +10,7 @@ public class Baraja {
 			mazoPrincipal.add(new Carta(imagenes[i], (i%13)+1, ((i/13)==0 || (i/13)==3)?Carta.NEGRO:Carta.ROJO, (i/13)));
 		}
 	}
+	
 	public void barajar(){
 		Carta auxiliar;
 		for (int i = 0; i < 100; i++) {
@@ -24,8 +24,8 @@ public class Baraja {
 	
 	public Carta sacar(){
 		Carta sacada;
-		sacada = mazoPrincipal.get(cartaActual);
-		mazoPrincipal.remove(cartaActual);
+		sacada = mazoPrincipal.get(0);
+		mazoPrincipal.remove(0);
 		return sacada;
 		
 	}
